@@ -1,0 +1,27 @@
+<div class="">
+  <form class="" action="surveys/process" method="post">
+    {% csrf_token %}
+    <div>
+    Your Name:<input type="text" name="name" value=""><br><br>
+  </div>
+  <idv>
+    <select name="location">
+      Dojo Location:<option value="San Jose">San Jose</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Dallas">Dallas</option>
+    </select>
+  </div>
+  <div>
+    <select name="language">
+      Favorite Location:<option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="iOS Swift">iOS Swift</option>
+    </select>
+  </div><br>
+    Comment (optional):
+  <div>
+    <textarea name="comment" rows="8" cols="80"></textarea><br><br>
+    <input type="submit" name="submit" value="submit">
+  </div>
+  </form>
+</div>
